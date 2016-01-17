@@ -99,6 +99,20 @@ a:link, a:visited, a:hover, a:active {
   :hover {
     opacity: 0.85;
   }
+
+  .image {
+    float: left;
+    width: 50%;
+    height: 100%;
+  }
+
+  .content {
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding: 105px 25px 0;
+    background-color: #2d3d54;
+  }
 }
 
 .sidemenu {
