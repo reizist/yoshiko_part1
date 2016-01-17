@@ -17,7 +17,7 @@ body {
 }
 
 *, *::before, *::after {
-  box-sizing: before-box;
+  box-sizing: border-box;
 }
 
 a:link, a:visited, a:hover, a:active {
