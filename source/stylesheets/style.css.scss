@@ -143,6 +143,55 @@ a:link, a:visited, a:hover, a:active {
   }
 }
 
+.heading {
+  padding: 10px 12px;
+  background: url('');
+  letter-spacing: 1px;
+  font-size: 1.6rem;
+}
+
+.scroll-list {
+  max-height: 220px;
+  over-flow-y: auto;
+  margin-bottom: 30px;
+  list-style-type: none;
+
+  .scroll-item a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    font-size: 0px;
+    transition: background-color 0.1s;
+  }
+
+  .scroll-item:nth-of-type(even) a {
+    background: url('');
+  }
+
+  .scroll-item a:hover {
+    background-color: #fafaf8;
+  }
+
+  .date {
+    display: inline-block;
+    width: 19%;
+    font-size: 1.0rem; 
+  }
+
+  .category {
+    display: inline-block;
+    width: 8%;
+    font-size: 1.0rem; 
+  }
+
+  .title {
+    display: inline-block;
+    width: 73;
+    padding-left: 15px;
+    font-size: 1.0rem; 
+  }
+}
+
 .sidemenu {
   float: right;
   width: 275px;

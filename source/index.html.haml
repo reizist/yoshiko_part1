@@ -13,7 +13,22 @@
         %time.date{datetime: "2016-01-16"}
           2016.01.16
           
-    %h2.hidden NEWS
+    %h2.heading NEWS
+    %ul.scroll-list
+      %li.scroll-item
+        =link_to('#') do
+          %time.date{datetime: "2016-01-16"}
+            2016.01.16
+          %span.category.news NEWS
+          %span.title WORKSを更新しました
+      %li.scroll-item
+        =link_to('#') do
+          %time.date{datetime: "2016-01-16"}
+            2016.01.16
+          %span.category TOPIC 
+          %span.title CSSでここまでできる！？うわああ！
+
+
     %h2.hidden ARTICLES
       
 
