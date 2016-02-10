@@ -273,6 +273,87 @@ a:link, a:visited, a:hover, a:active {
   width: 275px;
 }
 
+.ranking {
+  margin-bottom: 30px;
+  list-style-type: none;
+  counter-reset: ranking;
+  
+  .ranking-item {
+    margin-top: 15px;
+
+    a {
+      display: block;
+      font-size: 0;
+      transition: opacity 0.15s;
+    }
+
+    a:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .image {
+    width: 55px;
+    height: 55px;
+  }
+
+  .text {
+    display: inline-block;
+    width: 182px;
+    color: #000; 
+    vertical-align: top;
+    line-height: 1.5;
+    font-size: 1.2rem;
+  }
+
+  .order {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    color: #aaa;
+    vertical-align: 20px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 16px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .order::before {
+    content: counter(ranking);
+    counter-increment: ranking;
+    display: inline-block;
+    font-size: 1.0rem;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  .ranking-item:nth-of-type(1) .order,
+  .ranking-item:nth-of-type(2) .order,
+  .ranking-item:nth-of-type(3) .order {
+    border: none;
+    color: #fff;
+    font-weight: normal;
+    line-height: 18px;
+  }
+
+  .ranking-item:nth-of-type(1) .order {
+    background-color: #dab413;
+  }
+
+  .ranking-item:nth-of-type(2) .order {
+    background-color: #6e7b84;
+  }
+
+  .ranking-item:nth-of-type(3) .order {
+    background-color: #a0541a;
+  }
+}
+
 .footer {
   width: 100%;
 }
